@@ -8131,7 +8131,7 @@ class TCPDF {
 							$info = $this->_toJPEG($img);
 						}
 					}
-				} elseif (extension_loaded('imagick')) {
+				} elseif (0) {
 					// ImageMagick library
 					$img = new Imagick();
 					if ($type == 'SVG') {
@@ -8632,7 +8632,7 @@ class TCPDF {
 		$tempfile_plain = K_PATH_CACHE.'mskp_'.$filehash;
 		// create temp alpha file
 		$tempfile_alpha = K_PATH_CACHE.'mska_'.$filehash;
-		if (extension_loaded('imagick')) { // ImageMagick extension
+		if (0) { // ImageMagick extension
 			// ImageMagick library
 			$img = new Imagick();
 			$img->readImage($file);
