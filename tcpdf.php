@@ -8131,7 +8131,7 @@ class TCPDF {
 							$info = $this->_toJPEG($img);
 						}
 					}
-				} elseif (0) {
+				} elseif (extension_loaded('imagick')) {
 					// ImageMagick library
 					$img = new Imagick();
 					if ($type == 'SVG') {
